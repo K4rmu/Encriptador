@@ -1,24 +1,61 @@
+* {
+	font-family: monospace;
+}
+
+body {
+	background-image: url(./img/padlock.png);
+	background-size: 30%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
 header{
 	text-align: center;
-	padding-top: 50px;
+	padding-top: 20px;
 	padding-bottom: 10px;
-	background-color: grey;
+	background-color: #292C35;
+	color: white;
+	font-size: 50px;
+	font-weight: bold;
+	font-family: monospace;
 }
+
 
 main {
   	margin: auto;
   	display: flex;
   	justify-content: center;
+  	
+  	
 }
 
 form {
-	padding: 100px 10px;
+	margin:  20px;
+	padding: 80px 10px;
 	text-align: center;
+	background-color: #FBBD0D;
+	opacity: 97%;
+	border: ridge; 1px;
+}
+
+.input {
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+.respuesta {
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	border-bottom-left-radius: 100px;
 }
 
 form textarea {
 	padding: 10px;
 	border-radius: 5px;
+	opacity: 80%;
+	border: none;
+	background-color: #FAF5E6;
 }
 
 form label{
@@ -26,6 +63,8 @@ form label{
 	display: block;
 	font-size: 20px;
 	margin-bottom: 10px;
+	color: #292C35;
+	font-family: monospace;
 }
 
 input {
@@ -33,15 +72,32 @@ input {
 	margin:  5px 0 5px 5px;
 	padding: 10px;
 	width: 20%;
+	background-color: #2D2C2E;
+	color: #FAF5E6;
+	border: none;
+	border-radius: 10px;
+	font-weight: bold;
+	transition: 1s all;
+	cursor: pointer;
+}
+
+input:hover {
+	transform: scale(1.1)
 }
 
 .botones {
 	text-align: end;
 }
-
+.boton-secundario{
+	background-color: #FBBD0D;
+	color: #292C35;
+}
 footer {
 	text-align: center;
-	padding-bottom: 50px;
-	padding-top: 10px;
-	background-color: grey;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	background-color: #292C35;
+	color: white;
+	font-size: 12px;
+	font-family: monospace;
 }
