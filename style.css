@@ -1,0 +1,47 @@
+header{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	background-color: grey;
+}
+
+main {
+  	margin: auto;
+  	display: flex;
+  	justify-content: center;
+}
+
+form {
+	padding: 100px 10px;
+	text-align: center;
+}
+
+form textarea {
+	padding: 10px;
+	border-radius: 5px;
+}
+
+form label{
+	text-align: left;
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+input {
+	display: inline-block;
+	margin:  5px 0 5px 5px;
+	padding: 10px;
+	width: 20%;
+}
+
+.botones {
+	text-align: end;
+}
+
+footer {
+	text-align: center;
+	padding-bottom: 50px;
+	padding-top: 10px;
+	background-color: grey;
+}
