@@ -27,8 +27,9 @@
 			<label for="mensaje-encriptado">Mensaje secreto:</label>
 			<textarea cols="70" rows="10" id="mensaje-encriptado" placeholder="Aquí aparecera su mensaje secreto"></textarea>
 			<div class="botones">
-				<input type="submit" value="Copiar">
+				<input type="submit" id="copiar" value="Copiar">
 			</div>	
+			<span id="mensaje-copiado" class="invisible">¡Mensaje copiado con éxito!</span>
 		</form>
 	</main>
 
@@ -36,5 +37,6 @@
 		<p>Aplicación creada por M.V.C para AluraONE</p>
 	</footer>
 	<script src="encriptar.js"></script>
+	<script src="copiar.js"></script>
 </body>
 </html>

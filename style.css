@@ -92,6 +92,11 @@ input:hover {
 	background-color: #FBBD0D;
 	color: #292C35;
 }
+
+.invisible {
+	display: none;
+}
+
 footer {
 	text-align: center;
 	padding-bottom: 30px;

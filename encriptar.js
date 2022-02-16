@@ -1,3 +1,5 @@
+var mostrando = false;
+
 function encriptar(event){
 	event.preventDefault();
 	let mensaje = document.querySelector("#texto-ingesado").value;
@@ -19,6 +21,10 @@ function encriptar(event){
 	
 	let display = document.querySelector("#mensaje-encriptado");
 	display.value = msjEncriptado;
+	if(mostrando){
+		var alerta = document.querySelector("#mensaje-copiado");
+		alerta.classList.add("invisible");
+	}
 	document.querySelector("#texto-ingesado").value = "";
 }
 
