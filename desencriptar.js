@@ -1,5 +1,12 @@
 function desencriptar(event){
 	event.preventDefault();
+	
+	limpiarDivs("mensajeCopiado");
+	limpiarDivs("caracteresIncorrectos");
+	limpiarDivs("inputVacio");
+	limpiarDivs("mensajeVacio");
+
+
 	let mensaje = document.getElementById("texto-ingesado").value;
 	
 	if(mensaje.search("ai") != -1){

@@ -1,14 +1,33 @@
-var mostrando = false;
+var mensajeCopiado = false;
+var inputVacio = false;
+var caracteresIncorrectos = false;
+var mensajeVacio = false;
 
 function encriptar(event){
 	event.preventDefault();
-	let mensaje = document.querySelector("#texto-ingesado").value;
+	
+	limpiarDivs("mensajeCopiado");
+	limpiarDivs("caracteresIncorrectos");
+	limpiarDivs("inputVacio");
+	limpiarDivs("mensajeVacio");
+	
+
+	var mensaje = document.querySelector("#texto-ingesado").value;
+	
+	if(!mensaje){
+		document.querySelector("#inputVacio").classList.remove("invisible");
+		inputVacio = true;
+	}
+
 	if(mensaje != mensaje.toLowerCase()){
-		alert("Por favor, ingrese solo letras minúsculas, sin acentos.")
+		document.querySelector("#caracteresIncorrectos").classList.remove("invisible");
+		caracteresIncorrectos = true;
 		document.querySelector("#texto-ingesado").value ="";
 		return;
 	}
+
 	let msjEncriptado = "";
+	
 	for(let i= 0; i<mensaje.length; i++){
 		if(mensaje[i] === "a") msjEncriptado = msjEncriptado + "ai";
 		else if(mensaje[i] === "e") msjEncriptado = msjEncriptado +"enter";
@@ -21,10 +40,7 @@ function encriptar(event){
 	
 	let display = document.querySelector("#mensaje-encriptado");
 	display.value = msjEncriptado;
-	if(mostrando){
-		var alerta = document.querySelector("#mensaje-copiado");
-		alerta.classList.add("invisible");
-	}
+	
 	document.querySelector("#texto-ingesado").value = "";
 }
 

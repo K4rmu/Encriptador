@@ -21,6 +21,8 @@
 				<input type="submit" id="encriptar" value="Encriptar">
 				<input type="submit" id="desencriptar" class="boton-secundario" value="Desencriptar">
 			</div>
+			<span id="inputVacio" class="invisible">Ingrese un mensaje</span>
+			<span id="caracteresIncorrectos" class="invisible">Por favor, ingrese solo letras minúsculas, sin acentos</span>
 		</form>
 
 		<form class="respuesta">
@@ -29,7 +31,8 @@
 			<div class="botones">
 				<input type="submit" id="copiar" value="Copiar">
 			</div>	
-			<span id="mensaje-copiado" class="invisible">¡Mensaje copiado con éxito!</span>
+			<span id="mensajeCopiado" class="invisible">¡Mensaje copiado con éxito!</span>
+			<span id="mensajeVacio" class="invisible">Encripte o desencripte un mensaje antes de copiar</span>
 		</form>
 	</main>
 
@@ -39,5 +42,6 @@
 	<script src="encriptar.js"></script>
 	<script src="copiar.js"></script>
 	<script src="desencriptar.js"></script>
+	<script src="limpiarDivs.js"></script>
 </body>
 </html>
