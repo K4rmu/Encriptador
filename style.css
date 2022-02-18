@@ -10,18 +10,20 @@ body {
 }
 
 header{
-	text-align: center;
-	padding-top: 20px;
-	padding-bottom: 10px;
+	width: 100vw;
+	height: 15vh;
 	background-color: #292C35;
 	color: white;
-	font-size: 50px;
+	font-size: 3em;
 	font-weight: bold;
 	font-family: monospace;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-
 main {
+  	height: 70vh;
   	margin: auto;
   	display: flex;
   	justify-content: center;
@@ -98,38 +100,52 @@ input:hover {
 }
 
 footer {
-	text-align: center;
-	padding-bottom: 30px;
-	padding-top: 30px;
+	width: 100vw;
+	height: 15vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	background-color: #292C35;
 	color: white;
-	font-size: 12px;
 	font-family: monospace;
 }
 
-@media screen and (max-width: 480px){
+/*@media screen and (max-width: 480px){
 	body {
 		background-size: 80%;
 	}
 
 	main {
 		display: block;
+		align-content: center;
 	}
 
 	form {
-		padding: 25px ;
+		width: 70%;
+		padding: 10px;
+		margin: 20px 12vw;
 	}
 
 	form label {
 		text-align: center;
 		font-size: 16px;
+		margin: 0;
 	}
 
 	form textarea {
-		width: 90%;
+		width: 80%;
+		transform: scale(0.8);
 	}
 
 	input {
-		width: 40%;
+		width: 25%;
+		font-size: 9px;
+		display: flex;
+	}
+
+	.boton-secundario {
+		text-align: right;
 	}
 }
+*/
+/*Arreglar botones y span de errores*/
