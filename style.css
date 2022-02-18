@@ -106,3 +106,30 @@ footer {
 	font-size: 12px;
 	font-family: monospace;
 }
+
+@media screen and (max-width: 480px){
+	body {
+		background-size: 80%;
+	}
+
+	main {
+		display: block;
+	}
+
+	form {
+		padding: 25px ;
+	}
+
+	form label {
+		text-align: center;
+		font-size: 16px;
+	}
+
+	form textarea {
+		width: 90%;
+	}
+
+	input {
+		width: 40%;
+	}
+}
