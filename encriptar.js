@@ -6,6 +6,8 @@ var mensajeVacio = false;
 function encriptar(event){
 	event.preventDefault();
 	
+	let er = new RegExp("[A-Záéíóú]");
+
 	limpiarDivs("mensajeCopiado");
 	limpiarDivs("caracteresIncorrectos");
 	limpiarDivs("inputVacio");
@@ -19,7 +21,7 @@ function encriptar(event){
 		inputVacio = true;
 	}
 
-	if(mensaje != mensaje.toLowerCase()){
+	if(er.test(mensaje)){
 		document.querySelector("#caracteresIncorrectos").classList.remove("invisible");
 		caracteresIncorrectos = true;
 		document.querySelector("#texto-ingesado").value ="";
